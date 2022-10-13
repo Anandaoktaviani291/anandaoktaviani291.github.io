@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+html,
+body {
+    background-image: url("https://wallpapercave.com/uwp/uwp2820635.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background: #98A8F8;
+    backdrop-filter: blur(10.6px);
+    justify-content: space-around;
+    padding: 20px 0;
+    height: 20px;
+    width: 100vw;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 300;
+}
+
+nav .logo {
+    letter-spacing: 3px;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #874356;
+}
+
+nav .logo :hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: #F7DB9E;
+    transform: scale(1.2);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    z-index: 300;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    color: #874356;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
+nav ul li:hover {
+    font-weight: bolder;
+    background-color: #F7DB9E;
+    padding: 3px;
+}
+
+.menu-tombol {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-tombol input {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -15px;
+    top: -19px;
+    opacity: 0;
+    cursor: pointer;
+    background-color: #ffb8c6;
+    z-index: 3;
+}
+
+.menu-tombol span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffb8c6;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-tombol span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-tombol span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-tombol input:checked~span:nth-child(2) {
+    background-color: #ffb8c6;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-tombol input:checked~span:nth-child(4) {
+    background-color: #ffb8c6;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-tombol input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+p {
+    color: #874356;
+}
+
+.pp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 0.3rem solid #874356;
+    margin: 20px;
+}
+
+.sertif {
+    width: 30%;
+    border: 5px solid #874356;
+    border-radius: 20px;
+}
+
+.sertif:hover {
+    transform: scale(1.4);
+}
+
+.isikonten {
+    height: 100%;
+    background: rgba(142, 155, 230, 0.76);
+    border-radius: 14px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    padding: 50px;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kresek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.judul {
+    margin: 20px;
+    text-align: center;
+    font-size: 40pt;
+    color: #874356;
+}
+
+.judul-1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 30pt;
+    color: #874356;
+}
+
+.tombol-xl {
+    padding: 10px 16px;
+    border-radius: 25px;
+    background-color: rgb(105, 16, 37);
+    color: #98A8F8;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.tombol-xl:hover {
+    transform: scale(1.2);
+}
+
+
+::selection {
+    color: #F7DB9E;
+}
+
+.garis-teks {
+    border-bottom: 3px solid #874356;
+}
+
+.tombol-sosial {
+    display: flex;
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+center a {
+    text-decoration: none;
+}
+
+.warna-ig {
+    background-image: linear-gradient(to right, #914cc9 5%, #e4405f 95%);
+}
+
+.warna-ig:hover {
+    background-image: linear-gradient(to right, #e4405f 5%, #914cc9 95%);
+}
+
+.ikon-ig {
+    width: 30%;
+    height: 30px;
+    background-size: 100%;
+}
+
+.tombol-sosial p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.porto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 991.98px) {
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .judul {
+        font-size: 30pt;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .judul-1 {
+        font-size: 20pt;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .paragraf {
+        text-align: center;
+        font-size: 17pt;
+        margin: 20px;
+        color: rgb(255, 87, 127);
+    }
+
+    .tombol-xl {
+        padding: 10px 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: medium;
+        text-align: center;
+    }
+
+
+    .porto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul li a {
+        font-size: 14pt;
+        color: #ffb8c6;
+        font-weight: 200;
+    }
+
+    .menu-tombol {
+        display: flex;
+        z-index: 300;
+    }
+
+
+    nav ul {
+        position: fixed;
+        right: 0px;
+        top: 45px;
+        width: 28%;
+        height: 50vh;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        z-index: 300;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+        border-radius: 14px;
+        border: 2px solid rgb(165, 9, 45);
+        background: #f52e5c;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.6px);
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .isikonten {
+        margin-top: 35px;
+        padding: 19px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paragraf-inden {
+        color: #ffb8c6;
+        font-size: 12pt;
+        text-align: justify;
+    }
+}
